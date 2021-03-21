@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForecastWeatherViewController" customModule="Weather_App" customModuleProvider="target">
+            <connections>
+                <outlet property="errorView" destination="3cQ-dX-Vxl" id="jOs-dP-HgU"/>
+                <outlet property="tableView" destination="f14-7u-JZh" id="3Ft-hY-mdw"/>
+                <outlet property="view" destination="2Y1-jS-fNU" id="ITf-FC-Pk9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2Y1-jS-fNU">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rainbow_line" translatesAutoresizingMaskIntoConstraints="NO" id="tZj-wh-t9G">
+                    <rect key="frame" x="0.0" y="44" width="414" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="5i9-lT-aOR"/>
+                    </constraints>
+                </imageView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cQ-dX-Vxl" customClass="ErrorView" customModule="Weather_App" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="46" width="414" height="816"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f14-7u-JZh">
+                    <rect key="frame" x="0.0" y="46" width="414" height="850"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ppX-RI-L1Z"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="f14-7u-JZh" firstAttribute="top" secondItem="tZj-wh-t9G" secondAttribute="bottom" id="3Nu-aQ-lsP"/>
+                <constraint firstItem="3cQ-dX-Vxl" firstAttribute="top" secondItem="tZj-wh-t9G" secondAttribute="bottom" id="7tM-Kh-tNL"/>
+                <constraint firstItem="ppX-RI-L1Z" firstAttribute="trailing" secondItem="3cQ-dX-Vxl" secondAttribute="trailing" id="9Lk-px-FSz"/>
+                <constraint firstItem="f14-7u-JZh" firstAttribute="leading" secondItem="ppX-RI-L1Z" secondAttribute="leading" id="Sep-pn-aTD"/>
+                <constraint firstAttribute="bottom" secondItem="f14-7u-JZh" secondAttribute="bottom" id="fok-VX-6Eb"/>
+                <constraint firstItem="f14-7u-JZh" firstAttribute="trailing" secondItem="ppX-RI-L1Z" secondAttribute="trailing" id="jNm-w0-ky3"/>
+                <constraint firstItem="ppX-RI-L1Z" firstAttribute="trailing" secondItem="tZj-wh-t9G" secondAttribute="trailing" id="mdp-hf-N6m"/>
+                <constraint firstItem="tZj-wh-t9G" firstAttribute="leading" secondItem="ppX-RI-L1Z" secondAttribute="leading" id="oxP-0w-nG5"/>
+                <constraint firstItem="ppX-RI-L1Z" firstAttribute="bottom" secondItem="3cQ-dX-Vxl" secondAttribute="bottom" id="pF6-1B-G3g"/>
+                <constraint firstItem="3cQ-dX-Vxl" firstAttribute="leading" secondItem="ppX-RI-L1Z" secondAttribute="leading" id="qxW-jN-4ye"/>
+                <constraint firstItem="tZj-wh-t9G" firstAttribute="top" secondItem="ppX-RI-L1Z" secondAttribute="top" id="vf8-oG-sbw"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rainbow_line" width="320" height="2"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

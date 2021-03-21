@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Zij-Yr-imn" customClass="SectionTableViewCell" customModule="Weather_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zij-Yr-imn" id="4fp-3d-02W">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="gNR-K1-y1y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="dCg-1r-P4v"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhu-rP-gDD">
+                        <rect key="frame" x="20" y="12" width="0.0" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="WuO-5D-ISj">
+                        <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8Y8-Sc-Gje"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WuO-5D-ISj" firstAttribute="leading" secondItem="4fp-3d-02W" secondAttribute="leading" id="87x-P5-hcB"/>
+                    <constraint firstItem="uhu-rP-gDD" firstAttribute="leading" secondItem="4fp-3d-02W" secondAttribute="leading" constant="20" id="9el-M1-q3X"/>
+                    <constraint firstAttribute="bottom" secondItem="uhu-rP-gDD" secondAttribute="bottom" constant="12" id="BAM-la-KfV"/>
+                    <constraint firstAttribute="trailing" secondItem="WuO-5D-ISj" secondAttribute="trailing" id="CxI-fw-KLs"/>
+                    <constraint firstAttribute="trailing" secondItem="gNR-K1-y1y" secondAttribute="trailing" id="DHw-0M-Xjp"/>
+                    <constraint firstItem="uhu-rP-gDD" firstAttribute="top" secondItem="4fp-3d-02W" secondAttribute="top" constant="12" id="Ljy-H5-gPB"/>
+                    <constraint firstItem="gNR-K1-y1y" firstAttribute="top" secondItem="4fp-3d-02W" secondAttribute="top" id="bIb-Wk-jXm"/>
+                    <constraint firstItem="gNR-K1-y1y" firstAttribute="leading" secondItem="4fp-3d-02W" secondAttribute="leading" id="bU1-BG-Lzk"/>
+                    <constraint firstAttribute="bottom" secondItem="WuO-5D-ISj" secondAttribute="bottom" id="k13-u6-0V2"/>
+                    <constraint firstItem="WuO-5D-ISj" firstAttribute="top" secondItem="uhu-rP-gDD" secondAttribute="bottom" constant="11" id="muS-2m-2Sz"/>
+                    <constraint firstItem="uhu-rP-gDD" firstAttribute="top" secondItem="gNR-K1-y1y" secondAttribute="bottom" constant="11" id="qy1-De-GZd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aKu-k9-Qcm"/>
+            <connections>
+                <outlet property="sectionLabel" destination="uhu-rP-gDD" id="f6V-XR-0g4"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="124"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="divider" width="110" height="1"/>
+    </resources>
+</document>
